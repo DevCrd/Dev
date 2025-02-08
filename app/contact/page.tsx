@@ -32,6 +32,7 @@ export default function Contact() {
         throw new Error("Form submission failed")
       }
     } catch (error) {
+      console.log(error)
       setSubmitError("Failed to send message. Please try again or email directly.")
     } finally {
       setIsSubmitting(false)

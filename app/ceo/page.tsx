@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import ImageGallery from "../components/ImageGallery"
-import profileImage from "@/public/profile.jpg"
+// import profileImage from "@/public/profile.jpg"
 import profileImage2 from "@/public/1000188477.jpg"
 import profileImage3 from "@/public/1000223094.jpg"
 import profileImage4 from "@/public/1000262400.jpg"
