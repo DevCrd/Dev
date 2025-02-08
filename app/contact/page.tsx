@@ -1,7 +1,13 @@
 "use client"
 import { motion } from "framer-motion"
 import { useState } from "react"
-import { useForm } from "react-hook-form"
+import { useForm, type SubmitHandler } from "react-hook-form"
+
+interface FormData {
+  name: string
+  email: string
+  message: string
+}
 
 export default function Contact() {
   const {
@@ -9,12 +15,12 @@ export default function Contact() {
     handleSubmit,
     formState: { errors },
     reset,
-  } = useForm()
+  } = useForm<FormData>()
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitSuccess, setSubmitSuccess] = useState(false)
   const [submitError, setSubmitError] = useState("")
 
-  const onSubmit = async (data) => {
+  const onSubmit: SubmitHandler<FormData> = async (data) => {
     setIsSubmitting(true)
     try {
       const response = await fetch("https://formspree.io/f/xwpvqqdb", {
@@ -32,7 +38,7 @@ export default function Contact() {
         throw new Error("Form submission failed")
       }
     } catch (error) {
-      console.log(error)
+      console.error(error)
       setSubmitError("Failed to send message. Please try again or email directly.")
     } finally {
       setIsSubmitting(false)
