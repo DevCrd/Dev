@@ -5,7 +5,7 @@ import Footer from "./components/Footer"
 import { ThemeProvider } from "./components/ThemeProvider"
 import MouseFollower from "./components/MouseFollower"
 import ParticlesBackground from "./components/ParticlesBackground"
-import type React from "react" // Added import for React
+import type React from "react" 
 
 const inter = Inter({ subsets: ["latin"] })
 

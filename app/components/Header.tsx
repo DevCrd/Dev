@@ -3,7 +3,7 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 
 const Header = () => {
-  const links = ["About", "Services", "Contact", "CEO"]
+  const links = ["Services", "Contact", "CEO"]
 
   return (
     <header className="fixed w-full top-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-700">

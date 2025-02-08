@@ -2,6 +2,12 @@
 const nextConfig = {
   images: {
     domains: ["picsum.photos"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "*.public.blob.vercel-storage.com",
+      },
+    ],
   },
 }
 

@@ -1,4 +1,3 @@
-// components/Testimonials.tsx
 "use client"
 import { motion } from "framer-motion"
 
@@ -7,14 +6,14 @@ const testimonials = [
     name: "Educare Team",
     role: "Technology Partner",
     quote: "Transformed our education platform's performance and user engagement metrics",
-    impact: "40% faster system response times"
+    impact: "40% faster system response times",
   },
   {
     name: "Client School",
     role: "Long-term Customer",
     quote: "Revolutionized our digital infrastructure with 99.9% uptime",
-    impact: "500+ daily active users supported"
-  }
+    impact: "500+ daily active users supported",
+  },
 ]
 
 const Testimonials = () => {
@@ -32,17 +31,11 @@ const Testimonials = () => {
               transition={{ delay: index * 0.2 }}
               className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg"
             >
-              <p className="text-lg mb-4 italic">"{testimonial.quote}"</p>
+              <p className="text-lg mb-4 italic">&quot;{testimonial.quote}&quot;</p>
               <div className="border-t pt-4 border-gray-200 dark:border-gray-600">
-                <p className="font-semibold text-gray-800 dark:text-gray-200">
-                  {testimonial.name}
-                </p>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                  {testimonial.role}
-                </p>
-                <div className="text-blue-500 dark:text-blue-400 text-sm">
-                  ▲ {testimonial.impact}
-                </div>
+                <p className="font-semibold text-gray-800 dark:text-gray-200">{testimonial.name}</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">{testimonial.role}</p>
+                <div className="text-blue-500 dark:text-blue-400 text-sm">▲ {testimonial.impact}</div>
               </div>
             </motion.div>
           ))}
@@ -51,5 +44,6 @@ const Testimonials = () => {
     </section>
   )
 }
+
 export default Testimonials
 

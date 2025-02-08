@@ -92,11 +92,12 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-
-      <TechStackMarquee />
-      <ServicesOverview />
-      <Testimonials />
-      <CallToAction />
+      {/* <div className="mt-5"> */}
+        <TechStackMarquee />
+        <ServicesOverview />
+        <Testimonials />
+        <CallToAction />
+      {/* </div> */}
     </div>
   )
 }
