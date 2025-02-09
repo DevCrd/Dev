@@ -1,0 +1,18 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 161" width="200" height="161">
+	<title>next</title>
+	<style>
+		.s0 { fill: none;stroke: #000000 } 
+	</style>
+	<g>
+		<g>
+			<path class="s0" d="m85 85l15-25 15 25"/>
+			<path class="s0" d="m85 115l15 25 15-25"/>
+			<path class="s0" d="m60 100l25-15v30"/>
+			<path class="s0" d="m140 100l-25-15v30"/>
+		</g>
+	</g>
+	<g style="opacity: .75">
+		<path class="s0" d="m100 20l50 25v50l-50 25-50-25v-50z"/>
+		<path class="s0" d="m100 70l25 12.5v25l-25 12.5-25-12.5v-25z"/>
+	</g>
+</svg>

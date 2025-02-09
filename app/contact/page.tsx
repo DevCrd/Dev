@@ -47,15 +47,15 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      <div className="container mx-auto px-6 py-24">
-        <div className="grid lg:grid-cols-2 gap-16">
+      <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-24">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="bg-white dark:bg-gray-800 p-12 rounded-3xl shadow-2xl"
+            className="bg-white dark:bg-gray-800 p-6 sm:p-12 rounded-3xl shadow-2xl"
           >
-            <h2 className="text-3xl font-bold mb-8">Let&apos;s Connect</h2>
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-8">Let&apos;s Connect</h2>
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 sm:space-y-8">
               <div>
                 <label className="block text-sm font-medium mb-2">Name</label>
                 <input
@@ -122,9 +122,9 @@ export default function Contact() {
           </motion.div>
 
           <div className="space-y-8">
-            <div className="h-96 rounded-3xl overflow-hidden shadow-2xl bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+            <div className="h-64 sm:h-96 rounded-3xl overflow-hidden shadow-2xl bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
               <div className="text-center p-6">
-                <h3 className="text-2xl font-bold mb-4">Direct Contact</h3>
+                <h3 className="text-xl sm:text-2xl font-bold mb-4">Direct Contact</h3>
                 <p className="mb-4">Prefer direct communication?</p>
                 <a
                   href="mailto:chideraaniude@gmail.com"
@@ -139,7 +139,9 @@ export default function Contact() {
               <div className="p-6 rounded-xl bg-white dark:bg-gray-800 shadow-lg">
                 <h3 className="text-lg font-semibold mb-2">Contact Info</h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  chideraaniude@gmail.com
+                  <a href="mailto:chideraaniude@gmail.com" className="hover:underline">
+                    chideraaniude@gmail.com
+                  </a>
                   <br />
                   +234 814 975 6258
                   <br />
